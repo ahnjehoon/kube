@@ -28,6 +28,7 @@ def result(request):
         'app/result.html',
         {
             'title': search_keyword + '매출 데이터 분석결과',
-            'search_keyword': search_keyword
+            'search_keyword': search_keyword,
+            'year':datetime.now().year,
         }
     )
