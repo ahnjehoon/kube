@@ -32,3 +32,27 @@ def result(request):
             'year':datetime.now().year,
         }
     )
+
+def result_tweet(request):
+    assert isinstance(request, HttpRequest)
+    # 데이터를 받음
+
+    return render(
+        request,
+        'app/result_tweet.html',
+        {
+            'year':datetime.now().year,
+        }
+    )
+
+def result_youtube(request):
+    assert isinstance(request, HttpRequest)
+    # 데이터를 받음
+
+    return render(
+        request,
+        'app/result_youtube.html',
+        {
+            'year':datetime.now().year,
+        }
+    )

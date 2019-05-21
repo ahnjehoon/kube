@@ -24,6 +24,8 @@ from app import forms, views
 urlpatterns = [
     path('', views.index, name='index'),
     path('result/', views.result),
+    path('result_tweet/', views.result_tweet),
+    path('result_youtube/', views.result_youtube),
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
 ]

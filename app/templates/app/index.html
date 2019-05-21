@@ -1,33 +1,96 @@
-{% load staticfiles %}
+﻿{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>K - UBE</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<style>
+	body{
+		background-color: #000;
+	}
+	header {
+	  position: absolute;
+	  background-color: black;
+	  height: 100vh;
+	  min-height: 25rem;
+	  width: 100%;
+	  overflow: hidden;
+	}
 
-	<title>{{ title }}</title>
+	header video {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  min-width: 100%;
+	  min-height: 100%;
+	  width: auto;
+	  height: auto;
+	  z-index: 0;
+	  -ms-transform: translateX(-50%) translateY(-50%);
+	  -moz-transform: translateX(-50%) translateY(-50%);
+	  -webkit-transform: translateX(-50%) translateY(-50%);
+	  transform: translateX(-50%) translateY(-50%);
+	}
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	header .container {
+	  position: relative;
+	  z-index: 2;
+	}
 
-	<!-- Theme CSS - Includes Bootstrap -->
-	<link href="{% static 'css/creative.css' %}" rel="stylesheet">
-
+	header .overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-color: black;
+	  opacity: 0.5;
+	  z-index: 1;
+	}
+	.mb-4, .my-4 {
+        margin-bottom: 1.5rem!important;
+        border-width: 0.2rem;
+        border-color: #f4623a;
+        max-width: 12em;
+    }
+    .text-white-75 {
+        color: rgba(255, 255, 255, 0.75);
+    }
+    .mb-5,
+    .my-5 {
+      margin-bottom: 3rem !important;
+      font-size: 1.5rem;
+    }
+    .h1, h1 {
+        font-size: 3.5rem;
+    }
+    .h-90 {
+        height: 90%!important;
+    }
+	</style>
 </head>
 
-<body id="page-top">
+<body>
+    <header>
+        
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
+            <source src="{% static 'video/videoplayback.mp4' %}" type="video/mp4">
+        </video>
 
-	<!-- Masthead -->
-	<header class="masthead">
-		<div class="container h-100">
-			<div class="row h-75 align-items-center justify-content-center text-center">
+		<div class="container h-90">
+			<div class="row h-100 align-items-center justify-content-center text-center">
 				<div class="col-lg-10 align-self-end">
-					<h1 class="text-uppercase text-white font-weight-bold">K-CUBE</h1>
+					<h1 class="text-uppercase text-white font-weight-bold">K - UBE</h1>
 					<hr class="divider my-4">
 				</div>
 				<div class="col-lg-8 align-self-baseline">
@@ -46,18 +109,10 @@
 							</div>
 						</form>
 					</div>
-
-
 				</div>
 			</div>
 		</div>
-	</header>
-
-
-	<!-- Custom scripts for this template -->
-	<script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
-
+    </header>
 </body>
 
 </html>

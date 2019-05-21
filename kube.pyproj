@@ -1654,6 +1654,7 @@
     <Content Include="app\static\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="app\static\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="app\static\img\bg-masthead.jpg" />
+    <Content Include="app\static\img\fff.png" />
     <Content Include="app\static\img\twitter_wordcloud.png" />
     <Content Include="app\static\img\undraw_posting_photo.svg" />
     <Content Include="app\static\img\youtube_wordcloud.png" />
@@ -1669,8 +1670,8 @@
     <Content Include="app\static\js\jquery.min.js" />
     <Content Include="app\static\js\sb-admin-2.min.js" />
     <Content Include="app\static\video\videoplayback.mp4" />
-    <Content Include="app\templates\app\index2.html" />
     <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\index_2.html" />
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\result_tweet.html" />
     <Content Include="app\templates\app\result_youtube.html" />

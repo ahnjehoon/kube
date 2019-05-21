@@ -13,6 +13,7 @@ var myPieChart = new Chart(document.getElementById("myPieChart"), {
 		}],
 	},
     options: {
+        maintainAspectRatio: false,
 		tooltips: {
 			backgroundColor: "rgb(255,255,255)",
 			bodyFontColor: "#858796",
@@ -24,7 +25,6 @@ var myPieChart = new Chart(document.getElementById("myPieChart"), {
 			caretPadding: 10,
 		},
 		legend: {
-			display: false
 		},
 		cutoutPercentage: 60,
 	},
