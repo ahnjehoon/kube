@@ -18,6 +18,9 @@ def index(request):
         }
     )
 
+def loginPage(request):
+    return render(request,'app/login.html')
+
 def result(request):
     assert isinstance(request, HttpRequest)
     # 데이터를 받음

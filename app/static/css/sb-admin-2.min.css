@@ -9244,7 +9244,7 @@ button.bg-dark:hover {
 
 .mt-4,
 .my-4 {
-    margin-top: 1.5rem !important
+    margin-top: 2rem !important
 }
 
 .mr-4,
@@ -12832,6 +12832,12 @@ form.user .btn-user {
     color: #fff;
     background-color: #ea4335;
     border-color: #fff
+}
+
+.btn-naver {
+    color: #fff;
+    background-color: #00cd37;
+    border-color: #fff;
 }
 
     .btn-google:hover {
