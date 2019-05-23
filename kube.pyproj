@@ -1654,6 +1654,7 @@
     <Content Include="app\static\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="app\static\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="app\static\img\bg-masthead.jpg" />
+    <Content Include="app\static\img\login.gif" />
     <Content Include="app\static\img\fff.png" />
     <Content Include="app\static\img\naver.ico" />
     <Content Include="app\static\img\twitter_wordcloud.png" />

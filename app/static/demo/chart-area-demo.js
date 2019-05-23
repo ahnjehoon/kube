@@ -33,41 +33,15 @@ var myLineChart = new Chart(ctx, {
 	type: 'line',
 	data: {
 		labels: [
-            "201001"
-            , "201002"
-            , "201003"
-            , "201004"
-            , "201101"
-            , "201102"
-            , "201103"
-            , "201104"
-            , "201201"
-            , "201202"
-            , "201203"
-            , "201204"
-            , "201301"
-            , "201302"
-            , "201303"
-            , "201304"
-            , "201401"
-            , "201404"
-            , "201501"
-            , "201502"
-            , "201503"
-            , "201504"
-            , "201601"
-            , "201602"
-            , "201603"
-            , "201604"
-            , "201701"
-            , "201702"
-            , "201703"
-            , "201704"
-            , "201801"
-            , "201802"
-            , "201803"
-            ,"201804"
-
+2010
+,2011
+,2012
+,2013
+,2014
+,2015
+,2016
+,2017
+,2018
         ],
 		datasets: [{
 			label: "Earnings",
@@ -83,41 +57,15 @@ var myLineChart = new Chart(ctx, {
 			pointHitRadius: 10,
 			pointBorderWidth: 2,
             data: [
-                851
-                ,703
-                ,474
-                , 1310
-                , 2054
-                , 980
-                , 617
-                , 857
-                , 1543
-                , 1135
-                , 2350
-                , 2189
-                , 800
-                , 106
-                , 2457
-                , 2441
-                , 831
-                , 959
-                , 828
-                , 1828
-                , 2183
-                , 1720
-                , 1565
-                , 1547
-                , 4685
-                , 3130
-                , 3078
-                , 3189
-                , 5474
-                , 2702
-                , 4070
-                , 6622
-                , 8577
-                , 4438
-
+                3338
+                , 4508
+                , 7217
+                , 5804
+                , 1790
+                , 6559
+                , 10927
+                , 14443
+                , 23707
             ],
 		}],
 	},
@@ -148,7 +96,7 @@ var myLineChart = new Chart(ctx, {
 					padding: 10,
 					// Include a dollar sign in the ticks
 					callback: function(value, index, values) {
-						return number_format(value) + '억원';
+						return number_format(value) + '백만원';
 					}
 				},
 				gridLines: {
@@ -179,7 +127,7 @@ var myLineChart = new Chart(ctx, {
 			caretPadding: 10,
 			callbacks: {
 				label: function(tooltipItem, chart) {
-                    return number_format(tooltipItem.yLabel) + ' 억원' ;
+                    return number_format(tooltipItem.yLabel) + ' 백만원' ;
 				}
 			}
 		}
